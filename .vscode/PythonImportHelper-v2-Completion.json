@@ -1,0 +1,82 @@
+[
+    {
+        "label": "*",
+        "importPath": "ursina",
+        "description": "ursina",
+        "isExtraImport": true,
+        "detail": "ursina",
+        "documentation": {}
+    },
+    {
+        "label": "Test_cube",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Test_cube(Entity):\n    def __init__(self):\n        super().__init__(\n            model = 'cube',\n            color = color.white,\n            texture = 'white_cube',\n            rotation = Vec3(45,45,45)\n        )\nclass Test_button(Button):\n            def __init__(self):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "Test_button",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Test_button(Button):\n            def __init__(self):\n                super().__init__(\n                    model = 'cube',\n                    texture = 'brick',\n                    color = color.blue\n                )\ndef update():\n    if held_keys['a']:\n     test_square.x -= 4 * time.dt",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def update():\n    if held_keys['a']:\n     test_square.x -= 4 * time.dt\napp = Ursina()\ntest_square = Entity(model = 'cube', color =color.red,scale = (1,3), position = (5,1))\nsans_texture = load_texture('assets/owi.jpg')\nsans = Entity(model = 'quad', texture = sans_texture )\ntest_cube = Test_button()\napp.run()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = Ursina()\ntest_square = Entity(model = 'cube', color =color.red,scale = (1,3), position = (5,1))\nsans_texture = load_texture('assets/owi.jpg')\nsans = Entity(model = 'quad', texture = sans_texture )\ntest_cube = Test_button()\napp.run()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "test_square",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "test_square = Entity(model = 'cube', color =color.red,scale = (1,3), position = (5,1))\nsans_texture = load_texture('assets/owi.jpg')\nsans = Entity(model = 'quad', texture = sans_texture )\ntest_cube = Test_button()\napp.run()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sans_texture",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "sans_texture = load_texture('assets/owi.jpg')\nsans = Entity(model = 'quad', texture = sans_texture )\ntest_cube = Test_button()\napp.run()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sans",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "sans = Entity(model = 'quad', texture = sans_texture )\ntest_cube = Test_button()\napp.run()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "test_cube",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "test_cube = Test_button()\napp.run()",
+        "detail": "main",
+        "documentation": {}
+    }
+]
